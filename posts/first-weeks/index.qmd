@@ -1,6 +1,6 @@
 ---
 title: "My first weeks in MDS"
-author: "Your name"
+author: "Migs Dimayacyac"
 date: 2026-09-09
 ---
 My first in MDS has been very fast paced. From the first day of classes, learning statistics, coding platforms, and two coding languages felt like a big refresher. As I hadn't been in university since 2013, going from work-mode to study-mode meant having to adapt to a new schedule, new community, and new habits.
