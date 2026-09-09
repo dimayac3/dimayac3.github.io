@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "Background: I grew up in Singapore, only moving to Canada after graduating high school from Singapore American School. I then studied Mechanical Engineering at the University of British Columbia. After graduating with a Bachelors of Applied Science, I worked for an accounting firm as an administrative assistant before coming back to study data science."
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nMigs Dimayacyac\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +12,20 @@
     "title": "Migs",
     "section": "",
     "text": "My name is Migs Dimayacyac and I am a student in the MDS program. Prior to the program, I was working as an administrative assitant at an accounting firm in Victoria, BC. I am hoping to learn new skills and expand my professional network to rejoin the workforce as a data scientist."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "My first in MDS has been very fast paced. From the first day of classes, learning statistics, coding platforms, and two coding languages felt like a big refresher. As I hadn’t been in university since 2013, going from work-mode to study-mode meant having to adapt to a new schedule, new community, and new habits.\nWhat surprised me about the MDS program was how varying everyone’s experiences were from my own within the program. Meeting students from all parts of the world, with backgrounds ranging from software engineers to biology majors, gave perspective on how my lack of experience with technical skills like coding in Python, aren’t isolated.\nNow that the first week is done, I have a much better gauge on what is to come. I understand that there will be long days where I will sometimes feel like I don’t know what I’m doing. However, I believe that in keeping myself engaged with my peers, asking questions in class, and staying studious outside of class, I will learn a lot within the program and be confident in my ability to work towards being a data scientist when entering industry.\n\n\n\nJam Cafe brunch after the first week with fellow MDS students"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Background: I grew up in Singapore, only moving to Canada after graduating high school from Singapore American School. I then studied Mechanical Engineering at the University of British Columbia. After graduating with a Bachelors of Applied Science, I worked for an accounting firm as an administrative assistant before coming back to study data science."
   },
   {
     "objectID": "about.html#section",
@@ -33,19 +47,5 @@
     "title": "About",
     "section": "",
     "text": "Outside of data science: My favorite hobbies include music and dance. When it comes to music, singing was a main priority of mine, both competitively and recreationally. I also enjoy going to the gym and playing video games in my spare time."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nYour name\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
-    "section": "",
-    "text": "My first in MDS has been very fast paced. From the first day of classes, learning statistics, coding platforms, and two coding languages felt like a big refresher. As I hadn’t been in university since 2013, going from work-mode to study-mode meant having to adapt to a new schedule, new community, and new habits.\nWhat surprised me about the MDS program was how varying everyone’s experiences were from my own within the program. Meeting students from all parts of the world, with backgrounds ranging from software engineers to biology majors, gave perspective on how my lack of experience with technical skills like coding in Python, aren’t isolated.\nNow that the first week is done, I have a much better gauge on what is to come. I understand that there will be long days where I will sometimes feel like I don’t know what I’m doing. However, I believe that in keeping myself engaged with my peers, asking questions in class, and staying studious outside of class, I will learn a lot within the program and be confident in my ability to work towards being a data scientist when entering industry.\n\n\n\nJam Cafe brunch after the first week with fellow MDS students"
   }
 ]
