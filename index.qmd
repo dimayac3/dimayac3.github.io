@@ -2,6 +2,6 @@
 title: "Migs"
 ---
 
-![](images/IMG_2586.jpeg){width=250px}
+![](images/profile.jpeg){width=250px}
 
 # My name is Migs Dimayacyac and I am a student in the MDS program. Prior to the program, I was working as an administrative assitant at an accounting firm in Victoria, BC. I am hoping to learn new skills and expand my professional network to rejoin the workforce as a data scientist.
