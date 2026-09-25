@@ -1,0 +1,24 @@
+---
+title: "Python Analysis"
+author: "Migs Dimayacyac"
+date: 2026-09-24
+---
+
+``` {python}
+import numpy as np
+from palmerpenguins import load_penguins
+```
+
+``` {python}
+penguins = load_penguins()
+penguins.head()
+```
+
+``` {python}
+penguins.groupby("species").mean(numeric_only=True)[['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']].round()
+```
+
+``` {python}
+penguins['body_mass_lb'] = (penguins['body_mass_g'] / 453.592).round()
+penguins.dropna()
+```

@@ -1,0 +1,19 @@
+---
+title: "R Analysis"
+author: "Migs Dimayacyac"
+date: 2026-09-24
+---
+
+``` {r}
+library(tidyverse)
+library(palmerpenguins)
+```
+``` {r}
+penguins |> select(bill_length_mm:body_mass_g) |>  drop_na() |> round()
+```
+``` {r}
+penguins |> group_by(species, island) |> nest()
+```
+``` {r}
+penguins |> mutate(body_mass_lb = body_mass_g/453.592) |> select(species, island, body_mass_g) |> drop_na()
+```

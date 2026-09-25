@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nMigs Dimayacyac\n\n\n\n\n\nNo matching items"
+    "text": "Python Analysis\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nMigs Dimayacyac\n\n\n\n\n\n\n\n\n\n\n\n\nR Analysis\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nMigs Dimayacyac\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nMigs Dimayacyac\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -19,6 +19,13 @@
     "title": "My first weeks in MDS",
     "section": "",
     "text": "My first in MDS has been very fast paced. From the first day of classes, learning statistics, coding platforms, and two coding languages felt like a big refresher. As I hadn’t been in university since 2013, going from work-mode to study-mode meant having to adapt to a new schedule, new community, and new habits.\nWhat surprised me about the MDS program was how varying everyone’s experiences were from my own within the program. Meeting students from all parts of the world, with backgrounds ranging from software engineers to biology majors, gave perspective on how my lack of experience with technical skills like coding in Python, aren’t isolated.\nNow that the first week is done, I have a much better gauge on what is to come. I understand that there will be long days where I will sometimes feel like I don’t know what I’m doing. However, I believe that in keeping myself engaged with my peers, asking questions in class, and staying studious outside of class, I will learn a lot within the program and be confident in my ability to work towards being a data scientist when entering industry.\n\n\n\nJam Cafe brunch after the first week with fellow MDS students"
+  },
+  {
+    "objectID": "posts/python_analysis/index.html",
+    "href": "posts/python_analysis/index.html",
+    "title": "Python Analysis",
+    "section": "",
+    "text": "import numpy as np\nfrom palmerpenguins import load_penguins\n\n\npenguins = load_penguins()\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\n\npenguins.groupby(\"species\").mean(numeric_only=True)[['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']].round()\n\n\n\n\n\n\n\n\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\n\n\nspecies\n\n\n\n\n\n\n\n\nAdelie\n39.0\n18.0\n190.0\n3701.0\n\n\nChinstrap\n49.0\n18.0\n196.0\n3733.0\n\n\nGentoo\n48.0\n15.0\n217.0\n5076.0\n\n\n\n\n\n\n\n\npenguins['body_mass_lb'] = (penguins['body_mass_g'] / 453.592).round()\npenguins.dropna()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\nbody_mass_lb\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n8.0\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n8.0\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n7.0\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n8.0\n\n\n5\nAdelie\nTorgersen\n39.3\n20.6\n190.0\n3650.0\nmale\n2007\n8.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n9.0\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n7.0\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n8.0\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n9.0\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n8.0\n\n\n\n\n333 rows × 9 columns"
   },
   {
     "objectID": "about.html",
@@ -47,5 +54,12 @@
     "title": "About",
     "section": "",
     "text": "Outside of data science: My favorite hobbies include music and dance. When it comes to music, singing was a main priority of mine, both competitively and recreationally. I also enjoy going to the gym and playing video games in my spare time."
+  },
+  {
+    "objectID": "posts/r_analysis/index.html",
+    "href": "posts/r_analysis/index.html",
+    "title": "R Analysis",
+    "section": "",
+    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.2.0\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\n\n\npenguins |&gt; select(bill_length_mm:body_mass_g) |&gt;  drop_na() |&gt; round()\n\n# A tibble: 342 × 4\n   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n            &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n 1             39            19               181        3750\n 2             40            17               186        3800\n 3             40            18               195        3250\n 4             37            19               193        3450\n 5             39            21               190        3650\n 6             39            18               181        3625\n 7             39            20               195        4675\n 8             34            18               193        3475\n 9             42            20               190        4250\n10             38            17               186        3300\n# ℹ 332 more rows\n\n\n\npenguins |&gt; group_by(species, island) |&gt; nest()\n\n# A tibble: 5 × 3\n# Groups:   species, island [5]\n  species   island    data              \n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;            \n1 Adelie    Torgersen &lt;tibble [52 × 6]&gt; \n2 Adelie    Biscoe    &lt;tibble [44 × 6]&gt; \n3 Adelie    Dream     &lt;tibble [56 × 6]&gt; \n4 Gentoo    Biscoe    &lt;tibble [124 × 6]&gt;\n5 Chinstrap Dream     &lt;tibble [68 × 6]&gt; \n\n\n\npenguins |&gt; mutate(body_mass_lb = body_mass_g/453.592) |&gt; select(species, island, body_mass_g) |&gt; drop_na()\n\n# A tibble: 342 × 3\n   species island    body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;int&gt;\n 1 Adelie  Torgersen        3750\n 2 Adelie  Torgersen        3800\n 3 Adelie  Torgersen        3250\n 4 Adelie  Torgersen        3450\n 5 Adelie  Torgersen        3650\n 6 Adelie  Torgersen        3625\n 7 Adelie  Torgersen        4675\n 8 Adelie  Torgersen        3475\n 9 Adelie  Torgersen        4250\n10 Adelie  Torgersen        3300\n# ℹ 332 more rows"
   }
 ]
