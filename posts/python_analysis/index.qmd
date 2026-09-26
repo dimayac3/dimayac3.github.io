@@ -5,20 +5,39 @@ date: 2026-09-24
 ---
 
 ``` {python}
+#| message: false
+#| warning: false
 import numpy as np
 from palmerpenguins import load_penguins
 ```
 
+The data being manipulated in this post is from the Palmer Penguins dataset, loaded in from base R.
+
 ``` {python}
+#| fig-cap: "Table 1: Palmer Penguins Data Loaded In"
 penguins = load_penguins()
 penguins.head()
 ```
 
 ``` {python}
-penguins.groupby("species").mean(numeric_only=True)[['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']].round()
+#| fig-cap: "Table 2: Average Bill Length and Depth by Penguin Sex"
+penguin_mean = penguins.groupby("sex").mean(numeric_only=True)[['bill_length_mm', 'bill_depth_mm']].round()
+
+column_mm = {'bill_length_mm': 'Bill Length [mm]', 'bill_depth_mm': 'Bill Depth [mm]'}
+
+penguin_mean = penguin_mean.rename(columns = column_mm)
+
+penguin_mean.head()
 ```
 
 ``` {python}
-penguins['body_mass_lb'] = (penguins['body_mass_g'] / 453.592).round()
-penguins.dropna()
+#| fig-cap: "Table 3: Average Body Mass by Penguin Species"
+penguins['body_mass_lb'] = (penguins['body_mass_g'] / 453.592).round().dropna()
+penguin_mass = penguins.groupby(by = "species").mean(numeric_only=True)[["body_mass_lb"]].round(2)
+
+column_mass = {'body_mass_lb': 'Body Mass [lb]'}
+
+penguin_mass = penguin_mass.rename(columns = column_mass)
+
+penguin_mass.head()
 ```

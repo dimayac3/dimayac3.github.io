@@ -5,15 +5,29 @@ date: 2026-09-24
 ---
 
 ``` {r}
+#| message: false
+#| warning: false
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+The data being manipulated in this post is from the Palmer Penguins dataset, loaded in from base R.
+
 ``` {r}
-penguins |> select(bill_length_mm:body_mass_g) |>  drop_na() |> round()
+penguins_numerical <- penguins |> select(bill_length_mm:body_mass_g) |>  drop_na() |> round()
+
+head(penguins_numerical)
 ```
+Table 1: Palmer Penguins Data Numerical Stats
 ``` {r}
-penguins |> group_by(species, island) |> nest()
+penguins_grouping <- penguins |> group_by(species, island) |> nest()
+
+head(penguins_grouping)
 ```
+Table 2: Palmer Penguins Grouped by Species and Island
 ``` {r}
-penguins |> mutate(body_mass_lb = body_mass_g/453.592) |> select(species, island, body_mass_g) |> drop_na()
+penguins_mass <- penguins |> mutate(body_mass_lb = body_mass_g/453.592) |> select(species, island, body_mass_lb) |> drop_na()
+
+head(penguins_mass)
 ```
+Table 3: Palmer Penguins Mass Grouped By Species and Island

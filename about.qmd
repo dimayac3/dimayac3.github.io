@@ -2,11 +2,11 @@
 title: "About"
 ---
 
-## 
-Background: I grew up in Singapore, only moving to Canada after graduating high school from Singapore American School. I then studied Mechanical Engineering at the University of British Columbia. After graduating with a Bachelors of Applied Science, I worked for an accounting firm as an administrative assistant before coming back to study data science.
+## Background
+I grew up in Singapore, only moving to Canada after graduating high school from Singapore American School. I then studied Mechanical Engineering at the University of British Columbia. After graduating with a Bachelors of Applied Science, I worked for an accounting firm as an administrative assistant before coming back to study data science.
 
-##
-Why data science: I chose data science because I was really fascinated with working with data, which I had introductory exposure during both my undergraduate studies and talking to counsultants at the accounting firm.
+## Why Data Science
+I chose data science because I was really fascinated with working with data, which I had introductory exposure during both my undergraduate studies and talking to counsultants at the accounting firm.
 
-##
-Outside of data science: My favorite hobbies include music and dance. When it comes to music, singing was a main priority of mine, both competitively and recreationally. I also enjoy going to the gym and playing video games in my spare time.
+## Extracurricular
+My favorite hobbies include music and dance. When it comes to music, singing was a main priority of mine, both competitively and recreationally. I also enjoy going to the gym and playing video games in my spare time.
