@@ -1,6 +1,7 @@
 **/.ipynb_checkpoints/
 .DS_Store
 _site
+.venv/
 node_modules/
 /.quarto/
 **/*.quarto_ipynb
