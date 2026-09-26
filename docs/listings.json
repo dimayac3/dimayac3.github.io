@@ -2,8 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/python_analysis/index.html",
       "/posts/r_analysis/index.html",
+      "/posts/python_analysis/index.html",
       "/posts/first-weeks/index.html"
     ]
   }

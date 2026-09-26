@@ -195,13 +195,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="c2238514" class="cell" data-message="false" data-execution_count="1">
+<div id="9f0b6042" class="cell" data-message="false" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The data being manipulated in this post is from the Palmer Penguins dataset, loaded in from base R</p>
 <p>(Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi:10.5281/zenodo.3960218.)</p>
-<div id="2ee6138b" class="cell" data-execution_count="2">
+<div id="d78fb080" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> load_penguins()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>penguins.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -285,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Table 1: Palmer Penguins Data Loaded In</p>
 </div>
 </div>
-<div id="edb64dd4" class="cell" data-execution_count="3">
+<div id="f0c256ba" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>penguin_mean <span class="op">=</span> penguins.groupby(<span class="st">"sex"</span>).mean(numeric_only<span class="op">=</span><span class="va">True</span>)[[<span class="st">'bill_length_mm'</span>, <span class="st">'bill_depth_mm'</span>]].<span class="bu">round</span>()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>column_mm <span class="op">=</span> {<span class="st">'bill_length_mm'</span>: <span class="st">'Bill Length [mm]'</span>, <span class="st">'bill_depth_mm'</span>: <span class="st">'Bill Depth [mm]'</span>}</span>
@@ -328,7 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Table 2: Average Bill Length and Depth by Penguin Sex</p>
 </div>
 </div>
-<div id="a8e2bfce" class="cell" data-execution_count="4">
+<div id="e37a193d" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">'body_mass_lb'</span>] <span class="op">=</span> (penguins[<span class="st">'body_mass_g'</span>] <span class="op">/</span> <span class="fl">453.592</span>).<span class="bu">round</span>().dropna()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>penguin_mass <span class="op">=</span> penguins.groupby(by <span class="op">=</span> <span class="st">"species"</span>).mean(numeric_only<span class="op">=</span><span class="va">True</span>)[[<span class="st">"body_mass_lb"</span>]].<span class="bu">round</span>(<span class="dv">2</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
