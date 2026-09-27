@@ -35,7 +35,13 @@ uv sync
 
 ```{bash}
 R
+```
+
+```{bash}
 renv::restore()
+```
+
+```{bash}
 q()
 ```
 
